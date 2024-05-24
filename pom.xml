@@ -221,11 +221,11 @@
     <connection>scm:git:git@github.com:jleetutorial/maven-project.git</connection>
     <developerConnection>scm:git:git@github.com:jleetutorial/maven-project.git</developerConnection>
     <tag>HEAD</tag>
-    <url>http://github.com/jleetutorial/maven-project</url>
+    <url>https://github.com/vra0613/hello-world</url>
   </scm>
 
   <prerequisites>
-    <maven>3.0.3</maven>
+    <maven>3.5.0</maven>
   </prerequisites>
 
 </project>
