@@ -28,6 +28,13 @@
     </site>
   </distributionManagement>
 
+  <distributionManagement>
+    <repository>
+      <id>Artifactory</id>
+      <url>https://artifactory-cab.pvgroup.intranet/artifactory/maven-test-repo/</url>
+    </repository>
+  </distributionManagement>
+
   <build>
     <plugins>
       <plugin>
