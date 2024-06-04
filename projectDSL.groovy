@@ -9,7 +9,14 @@ job('Project Build-DSL') {
                 }
             }
         }
-   steps {
-     maven ('clean install', 'hello-world/pom.xml')
-   }
+  triggers {
+    scm('* * * * *')
+    }
+  steps {
+    maven('clean package', 'maven-samples/single-module/pom.xml')
+    }
+  publishers {
+    //archive the war file generated
+    archiveArtifacts '**/*.jar'
+    }
 }
