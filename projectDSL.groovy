@@ -9,4 +9,10 @@ job('Project Build-DSL') {
                 }
             }
         }
+   trigger {
+     scm ('*****')
+   }
+   steps {
+     maven ('clean install', 'hello-world/pom.xml')
+   }
 }
