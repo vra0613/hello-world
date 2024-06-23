@@ -8,27 +8,27 @@
 <packaging>pom</packaging>
 <version>1.0-SNAPSHOT</version>
 <name>Maven Project</name>
-<description>Sample Maven project with a working, deployable site.</description>
+<description>Maven project with a working, deployable site.</description>
 <url>https://artifactory-cab.pvgroup.intranet/artifactory</url> <!-- Updated URL -->
  
     <distributionManagement>
 <repository>
-<id>maven-test-repo-releases</id>
+<id>maven-repo-releases</id>
 <name>Artifactory Release Repository</name>
-<url>https://artifactory-cab.pvgroup.intranet/artifactory/maven-test-repo</url>
+<url>https://artifactory-cab.pvgroup.intranet/artifactory/maven-repo/</url>
 </repository>
 <snapshotRepository>
-<id>maven-test-repo-snapshots</id>
+<id>maven-repo-snapshots</id>
 <name>Artifactory Snapshot Repository</name>
-<url>https://artifactory-cab.pvgroup.intranet/artifactory/maven-test-repo</url>
+<url>https://artifactory-cab.pvgroup.intranet/artifactory/maven-repo/</url>
 </snapshotRepository>
 </distributionManagement>
  
     <repositories>
 <repository>
-<id>maven-test-repo</id>
+<id>maven-repo</id>
 <name>Artifactory Repository</name>
-<url>https://artifactory-cab.pvgroup.intranet/artifactory/maven-test-repo</url>
+<url>https://artifactory-cab.pvgroup.intranet/artifactory/maven-repo/</url>
 <releases>
 <enabled>true</enabled>
 </releases>
@@ -38,11 +38,11 @@
 </repository>
 </repositories>
  
-    <pluginRepositories>
+<pluginRepositories>
 <pluginRepository>
-<id>maven-test-repo</id>
+<id>maven-repo</id>
 <name>Artifactory Plugin Repository</name>
-<url>https://artifactory-cab.pvgroup.intranet/artifactory/maven-test-repo</url>
+<url>https://artifactory-cab.pvgroup.intranet/artifactory/maven-repo/</url>
 <releases>
 <enabled>true</enabled>
 </releases>
